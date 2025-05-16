@@ -115,10 +115,10 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8 sm:mb-12 mt-4">
-          <h1 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-500 dark:from-emerald-400 dark:to-teal-300 inline-block text-transparent bg-clip-text mb-2 sm:mb-4">
-            شجرة العائلة
+          <h1 className="text-xl sm:text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-500 dark:from-emerald-400 dark:to-teal-300 inline-block text-transparent bg-clip-text mb-2 sm:mb-4">
+            شجرة عائلة قائد عبدالقادر الصبري
           </h1>
-          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 px-4">
+          <p className="text-sm sm:text-sm text-slate-600 dark:text-slate-300 px-4">
             استكشف تاريخ العائلة وتعرف على أفرادها عبر الأجيال المختلفة
           </p>
         </div>
