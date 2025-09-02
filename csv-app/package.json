@@ -1,0 +1,23 @@
+{
+  "name": "csv-data-processing-system",
+  "version": "1.0.0",
+  "description": "Full-stack CSV data processing and storage system",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run build && serve -s build",
+    "db:setup": "cd backend && npm run db:generate && npm run db:push",
+    "db:reset": "cd backend && npx prisma db push --force-reset",
+    "docker:db": "docker-compose up -d postgres"
+  },
+  "keywords": ["csv", "data-processing", "react", "express", "postgresql", "excel"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
